@@ -54,7 +54,8 @@ public class AuthController {
 
         Usuario usuario = new Usuario();
         usuario.setEmail(request.getEmail());
-        usuario.setContrasena(passwordEncoder.encode(request.getContrasena()));
+        // Guarda la contraseña sin encriptar para pruebas rápidas
+        usuario.setContrasena(request.getContrasena());
         usuario.setPrimerNombre(request.getPrimerNombre());
         usuario.setSegundoNombre(request.getSegundoNombre());
         usuario.setPrimerApellido(request.getPrimerApellido());

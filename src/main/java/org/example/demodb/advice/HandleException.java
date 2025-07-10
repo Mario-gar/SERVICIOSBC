@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.HashMap;
 import java.util.Map;
 
-import static sun.net.www.protocol.http.AuthenticatorKeys.getKey;
-
 @RestControllerAdvice
 public class HandleException {
 
